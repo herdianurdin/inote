@@ -3,14 +3,24 @@ import ContentInput from './content-input'
 import ContentPreview from './content-preview'
 
 const Content = ({ activeNote, onUpdateNote }) => {
-  const [isPreview, setIsPreview] = useState(true)
+  const [isView, setIsView] = useState(true)
+
   const handleContentTool = (e) => {
     document
       .querySelectorAll('.content-tool .button')
       .forEach((button) => button.classList.remove('active'))
 
     e.target.classList.add('active')
-    setIsPreview(e.target.id === 'view')
+    setIsView(e.target.id === 'view')
+  }
+
+  const handleViewOnUpdate = () => {
+    document
+      .querySelectorAll('.content-tool .button')
+      .forEach((button) => button.classList.remove('active'))
+
+    document.querySelector('#view').classList.add('active')
+    setIsView(true)
   }
 
   if (!activeNote) {
@@ -37,10 +47,14 @@ const Content = ({ activeNote, onUpdateNote }) => {
             Edit
           </div>
         </div>
-        {isPreview ? (
+        {isView ? (
           <ContentPreview note={activeNote} />
         ) : (
-          <ContentInput note={activeNote} onUpdateNote={onUpdateNote} />
+          <ContentInput
+            note={activeNote}
+            onUpdateNote={onUpdateNote}
+            handleViewOnUpdate={handleViewOnUpdate}
+          />
         )}
       </div>
     </div>
