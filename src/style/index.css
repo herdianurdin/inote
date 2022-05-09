@@ -274,7 +274,7 @@ br {
 
 .content {
   width: calc(100% - 56px);
-  height: 100%;
+  height: 100vh;
   overflow-y: auto;
   margin-left: 56px;
   padding: 24px;
