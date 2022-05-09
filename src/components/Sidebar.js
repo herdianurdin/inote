@@ -50,7 +50,7 @@ const Sidebar = React.memo(
           </div>
           <div className='sidebar-search'>
             <input
-              type='text'
+              type='search'
               id='search'
               onKeyDown={handleSearchEnter}
               onChange={(e) => setSearchKeyword(e.target.value)}
