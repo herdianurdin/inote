@@ -1,13 +1,13 @@
-import { useState } from 'react'
-import ContentInput from './content-input'
-import ContentPreview from './content-preview'
+import React, { useState } from 'react'
+import ContentEdit from './ContentEdit'
+import ContentView from './ContentView'
 
-const Content = ({ activeNote, onUpdateNote }) => {
+const Content = React.memo(({ activeNote, onUpdateNote }) => {
   const [isView, setIsView] = useState(true)
 
-  const handleContentTool = (e) => {
+  const handleContentNav = (e) => {
     document
-      .querySelectorAll('.content-tool .button')
+      .querySelectorAll('.content-nav div')
       .forEach((button) => button.classList.remove('active'))
 
     e.target.classList.add('active')
@@ -16,7 +16,7 @@ const Content = ({ activeNote, onUpdateNote }) => {
 
   const handleViewOnUpdate = () => {
     document
-      .querySelectorAll('.content-tool .button')
+      .querySelectorAll('.content-nav div')
       .forEach((button) => button.classList.remove('active'))
 
     document.querySelector('#view').classList.add('active')
@@ -39,18 +39,18 @@ const Content = ({ activeNote, onUpdateNote }) => {
   return (
     <div className='content'>
       <div>
-        <div className='content-tool'>
-          <div id='view' onClick={handleContentTool} className='button active'>
+        <div className='content-nav'>
+          <div id='view' onClick={handleContentNav} className='active'>
             View
           </div>
-          <div id='edit' onClick={handleContentTool} className='button'>
+          <div id='edit' onClick={handleContentNav}>
             Edit
           </div>
         </div>
         {isView ? (
-          <ContentPreview note={activeNote} />
+          <ContentView note={activeNote} />
         ) : (
-          <ContentInput
+          <ContentEdit
             note={activeNote}
             onUpdateNote={onUpdateNote}
             handleViewOnUpdate={handleViewOnUpdate}
@@ -59,6 +59,6 @@ const Content = ({ activeNote, onUpdateNote }) => {
       </div>
     </div>
   )
-}
+})
 
 export default Content

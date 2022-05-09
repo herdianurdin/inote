@@ -1,6 +1,7 @@
 {
   "short_name": "Inote",
   "name": "Inote",
+  "description": "A simple classic notes app that can save notes in Local Storage. With a responsive application display.",
   "icons": [
     {
       "src": "favicon.ico",
@@ -27,5 +28,5 @@
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#040404",
-  "background_color": "#ffffff"
+  "background_color": "#040404"
 }

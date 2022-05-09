@@ -1,9 +1,9 @@
-import { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import uuid from 'react-uuid'
-import Content from '../components/content'
-import Sidebar from '../components/sidebar'
+import Content from '../components/Content'
+import Sidebar from '../components/Sidebar'
 
-const Home = () => {
+const Home = React.memo(() => {
   const [notes, setNotes] = useState(
     JSON.parse(localStorage.getItem('notes')) || []
   )
@@ -12,7 +12,7 @@ const Home = () => {
   const onAddNote = () => {
     const newNote = {
       id: uuid(),
-      title: 'Untitled Note',
+      title: '',
       body: '',
       createdAt: Date.now(),
       updatedAt: Date.now(),
@@ -52,6 +52,6 @@ const Home = () => {
       </main>
     </>
   )
-}
+})
 
 export default Home
