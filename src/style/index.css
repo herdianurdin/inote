@@ -95,6 +95,10 @@ textarea::-webkit-scrollbar {
   border-right: var(--border);
 }
 
+.sidebar * {
+  user-select: none;
+}
+
 .sidebar.show {
   width: 400px;
 }
