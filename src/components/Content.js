@@ -38,25 +38,23 @@ const Content = React.memo(({ activeNote, onUpdateNote }) => {
 
   return (
     <div className='content'>
-      <div>
-        <div className='content-nav'>
-          <div id='view' onClick={handleContentNav} className='active'>
-            View
-          </div>
-          <div id='edit' onClick={handleContentNav}>
-            Edit
-          </div>
+      <div className='content-nav'>
+        <div id='view' onClick={handleContentNav} className='active'>
+          View
         </div>
-        {isView ? (
-          <ContentView note={activeNote} />
-        ) : (
-          <ContentEdit
-            note={activeNote}
-            onUpdateNote={onUpdateNote}
-            handleViewOnUpdate={handleViewOnUpdate}
-          />
-        )}
+        <div id='edit' onClick={handleContentNav}>
+          Edit
+        </div>
       </div>
+      {isView ? (
+        <ContentView note={activeNote} />
+      ) : (
+        <ContentEdit
+          note={activeNote}
+          onUpdateNote={onUpdateNote}
+          handleViewOnUpdate={handleViewOnUpdate}
+        />
+      )}
     </div>
   )
 })
