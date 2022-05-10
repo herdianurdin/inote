@@ -1,17 +1,33 @@
 ## About Project
 
 ![Screenshot](screenshot.webp)
+
 Simple classic note app that can save notes in Local Storage. With a responsive application display. In addition, this application can work offline (PWA).
+
+### JSON Structure
+```JSON
+[
+  {
+    "id": "1ded1ac-ee8b-58b1-26e-7360da2200c1",
+    "title": "Example title",
+    "body": "Example body",
+    "updatedAt": 1652009772511
+  }
+]
+```
 ### Built With
-[![React.js](react-js.webp)](https://reactjs.org/)
+[<img src='react-js.svg' width="100" />](https://reactjs.org/)
 
 
 ## Getting Started
+
 ### Prerequisites
 ```sh
 npm install npm@latest -g
 ```
+
 ### Installation
+
 1. Clone the repo
 ```sh
 git clone https://github.com/herdianurdin/inote.git
@@ -22,6 +38,7 @@ npm install
 ```
 
 ## Usage
+
 ### Run Project
 ```sh
 npm run start
@@ -32,4 +49,5 @@ npm run build
 ```
 
 ## License
+
 Distributed under the  GPL-3.0 License. See [LICENSE](LICENSE) for more information.
