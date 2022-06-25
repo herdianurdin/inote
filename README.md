@@ -1,8 +1,10 @@
 ## About Project
 
-![Screenshot](screenshot.webp)
+![Screenshot](inote.webp)
 
 Simple classic note app that can save notes in Local Storage. With a responsive application display. In addition, this application can work offline (PWA).
+
+[Demo App](https://herdianurdin.github.io/inote/)
 
 ### JSON Structure
 ```JSON
