@@ -1,15 +1,24 @@
 {
   "files": {
-    "main.css": "/inote/static/css/main.0fe8db3b.css",
-    "main.js": "/inote/static/js/main.3cf0f999.js",
-    "service-worker.js": "/inote/service-worker.js",
-    "static/media/jetbrains.woff2": "/inote/static/media/jetbrains.3f027a9c49e319a2084b.woff2",
+    "main.css": "/inote/static/css/main.f699e538.chunk.css",
+    "main.js": "/inote/static/js/main.0da19fde.chunk.js",
+    "main.js.map": "/inote/static/js/main.0da19fde.chunk.js.map",
+    "runtime-main.js": "/inote/static/js/runtime-main.9222faf5.js",
+    "runtime-main.js.map": "/inote/static/js/runtime-main.9222faf5.js.map",
+    "static/js/2.685d5575.chunk.js": "/inote/static/js/2.685d5575.chunk.js",
+    "static/js/2.685d5575.chunk.js.map": "/inote/static/js/2.685d5575.chunk.js.map",
     "index.html": "/inote/index.html",
-    "main.0fe8db3b.css.map": "/inote/static/css/main.0fe8db3b.css.map",
-    "main.3cf0f999.js.map": "/inote/static/js/main.3cf0f999.js.map"
+    "service-worker.js": "/inote/service-worker.js",
+    "service-worker.js.LICENSE.txt": "/inote/service-worker.js.LICENSE.txt",
+    "service-worker.js.map": "/inote/service-worker.js.map",
+    "static/css/main.f699e538.chunk.css.map": "/inote/static/css/main.f699e538.chunk.css.map",
+    "static/js/2.685d5575.chunk.js.LICENSE.txt": "/inote/static/js/2.685d5575.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/inote/static/media/jetbrains.3f027a9c.woff2"
   },
   "entrypoints": [
-    "static/css/main.0fe8db3b.css",
-    "static/js/main.3cf0f999.js"
+    "static/js/runtime-main.9222faf5.js",
+    "static/js/2.685d5575.chunk.js",
+    "static/css/main.f699e538.chunk.css",
+    "static/js/main.0da19fde.chunk.js"
   ]
 }
