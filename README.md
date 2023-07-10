@@ -50,6 +50,9 @@ npm run start
 npm run build
 ```
 
+### Code Editor
+I use Visual Studio Code as my main code editor.
+
 ## License
 
 Distributed under the  GPL-3.0 License. See [LICENSE](LICENSE) for more information.
